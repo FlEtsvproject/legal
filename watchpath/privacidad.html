@@ -55,19 +55,18 @@ li, p { margin:.5rem 0; }
 <p>En esta versión no hay compras dentro de la app. Cuando se active el plan Pro, la compra se procesará a través de Google Play y esta política se actualizará antes.</p>
 
 <h2>Servicio de IA</h2>
-<p>WatchPath ofrece funciones de IA <strong>opcionales</strong> («por qué te gustará», ideas fuera de tu lista y resumen de una serie hasta donde vas). Solo se usan cuando tú las pides; el resto de la app funciona igual sin ellas y sin conexión. La app no contiene claves ni conecta directamente con ningún proveedor de IA: envía la petición a una pasarela de IA operada por el desarrollador (Centro OS), que la reenvía a un proveedor de modelos de lenguaje.</p>
-<p>Para limitar el abuso y contar la cuota de uso gratuito, la app usa un identificador de instalación aleatorio (no está ligado a ti ni a tu cuenta de Google) y una comprobación de integridad de Google Play que confirma que la app es la original.</p>
+<p>WatchPath ofrece dos funciones de IA <strong>opcionales</strong>: «¿Por qué te gustará?» (una frase por cada propuesta de Noche de cine) y «Ponte al día» (un resumen de una serie hasta donde vas, sin destripar lo posterior). Solo se usan cuando tú las pides, y la primera vez la app te enseña lo que se envía y te pide confirmación; el resto de la app funciona igual sin ellas y sin conexión. La app no contiene claves ni conecta con ningún proveedor de IA de terceros: envía la petición a una pasarela de IA operada por el desarrollador (Centro OS), que la procesa con un modelo de lenguaje que ejecuta el propio desarrollador en sus equipos.</p>
+<p>Para limitar el abuso y contar el cupo gratuito (unos pocos usos al día), la app genera en tu dispositivo una clave técnica que identifica la instalación (no está ligada a ti, a tu cuenta de Google ni a tu dispositivo físico) y firma con ella cada petición. El servicio cuenta los usos por esa clave y limita las peticiones por dirección IP sin guardarla. La conexión pasa por Cloudflare, que, como cualquier intermediario de red, ve tu dirección IP.</p>
 
-<h2>Región del proveedor</h2>
-<p>El servicio de IA procesa las peticiones mediante un proveedor situado en Singapur. Esto implica una transferencia internacional de los datos de la petición. El proveedor actúa como encargado del tratamiento y no los usa para entrenar modelos.</p>
+<h2>Dónde se procesa</h2>
+<p>En los equipos del propio desarrollador. No hay proveedor de IA de terceros ni se usan tus peticiones para entrenar modelos.</p>
 
 <h2>Qué se envía</h2>
 <p>Al usar la IA se envía únicamente este texto:</p>
 <ul>
-  <li>Los títulos (hasta 50) y el año de las obras sobre las que pides ayuda.</li>
+  <li>Para «¿Por qué te gustará?»: el título, el año y tu puntuación de hasta 50 títulos de tu biblioteca, y los títulos propuestos.</li>
   <li>El identificador de catálogo (id_tmdb) cuando se conoce.</li>
-  <li>Tu puntuación, en una escala de 1 a 5, de esas obras.</li>
-  <li>En el resumen de una serie, la temporada y el episodio hasta donde vas, para no desvelarte nada posterior.</li>
+  <li>Para «Ponte al día»: el título y el año de la serie y la temporada y el episodio hasta donde vas, para no desvelarte nada posterior.</li>
   <li>El idioma de la respuesta (español o inglés).</li>
 </ul>
 
