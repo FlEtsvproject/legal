@@ -18,9 +18,9 @@ li, p { margin:.5rem 0; }
 </head>
 <body>
 <h1>Política de privacidad de WatchPath</h1>
-<p class="meta">Última actualización: 20 de octubre de 2026 · Versión de la app: 1.0</p>
+<p class="meta">Última actualización: 20 de octubre de 2026 · Versión de la app: 1.1</p>
 
-<p>WatchPath es una app para Android que te ayuda a seguir películas, series y anime. No tiene cuentas ni registro: tu biblioteca, tus notas y tus ajustes se guardan solo en tu dispositivo. Esta política explica qué datos trata la app y cuáles no.</p>
+<p>WatchPath es una app para Android que te ayuda a seguir películas, series y anime. No tiene cuentas ni registro: tu biblioteca, tus notas y tus ajustes se guardan solo en tu dispositivo. Esta política explica qué datos trata la app, quién los recibe y cómo puedes controlarlos.</p>
 
 <h2>Responsable</h2>
 <p>El responsable del tratamiento es el desarrollador de WatchPath (Steven, desarrollador independiente en España). Puedes contactar con él mediante el correo de contacto que figura en la ficha de la app en Google Play.</p>
@@ -33,41 +33,71 @@ li, p { margin:.5rem 0; }
   <li>Las plataformas y enlaces que anotas tú mismo para saber dónde ver cada título.</li>
   <li>Tus ajustes (idioma, tema claro u oscuro, etc.).</li>
 </ul>
-<p>Estos datos no se envían a ningún servidor del desarrollador, porque no existe ese servidor. No hay cuenta, no hay sincronización en la nube y no hay copia de seguridad remota. Si desinstalas la app o borras sus datos desde Android, se eliminan.</p>
+<p>Estos datos no se envían a ningún servidor del desarrollador: no hay cuenta, no hay sincronización en la nube y no hay copia de seguridad remota. Si desinstalas la app o borras sus datos desde Android, se eliminan.</p>
 
 <h2>Conexiones a Internet</h2>
-<p>La app solo se conecta a Internet para <strong>buscar series y episodios</strong> en el servicio público TVmaze (tvmaze.com). Cuando buscas un título, la app envía a TVmaze el texto de tu búsqueda y, al abrir una ficha, el identificador del título. Como en cualquier conexión a Internet, TVmaze recibe también la dirección IP de tu dispositivo. El desarrollador no recibe ni almacena esa información. TVmaze trata esos datos según su propia política de privacidad.</p>
-<p>Si no buscas títulos nuevos, la app funciona sin conexión.</p>
+<p>La app se conecta a Internet para <strong>buscar series y episodios</strong> en el servicio público TVmaze (tvmaze.com): envía el texto de tu búsqueda y, al abrir una ficha, el identificador del título. Como en cualquier conexión, TVmaze recibe también la dirección IP de tu dispositivo y trata esos datos según su propia política de privacidad. El desarrollador no recibe ni almacena esa información.</p>
+<p>Si no buscas títulos nuevos ni usas anuncios ni las funciones de IA, la app funciona sin conexión.</p>
 
 <h2>Anuncios, analítica y compras</h2>
+<h3>Anuncios (Google AdMob)</h3>
+<p>La versión gratuita de WatchPath muestra anuncios mediante <strong>Google AdMob</strong>: un banner en Biblioteca y Buscar y, de forma esporádica, un anuncio a pantalla completa al salir de «Noche de cine». Nunca hay anuncios mientras rellenas un formulario ni mientras usas la IA.</p>
 <ul>
-  <li><strong>Esta versión no muestra anuncios</strong> ni incluye ningún SDK de publicidad.</li>
-  <li>No incluye analítica ni herramientas de seguimiento, ni informes de fallos enviados a terceros.</li>
-  <li>No hay compras dentro de la app en esta versión.</li>
-  <li>No se usa el identificador de publicidad de tu dispositivo.</li>
+  <li><strong>Qué trata AdMob:</strong> para mostrar y medir anuncios, Google puede recibir y tratar el <strong>identificador de publicidad</strong> de tu dispositivo, tu dirección IP, datos del dispositivo (modelo, versión de Android, idioma), una ubicación aproximada deducida de la IP y tus interacciones con los anuncios. WatchPath no envía a AdMob tu biblioteca, tus notas ni lo que buscas. Google actúa como responsable de los datos que trata para publicidad; puedes consultar cómo en <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
+  <li><strong>Consentimiento:</strong> en el Espacio Económico Europeo, el Reino Unido y Suiza, la primera vez que abres la app aparece el formulario de consentimiento de Google (UMP, conforme al RGPD y a la Directiva ePrivacy). <strong>No se pide ningún anuncio hasta que lo has contestado</strong>. Si no lo aceptas, no se muestran anuncios.</li>
+  <li><strong>Cambiar tu elección:</strong> en Ajustes › Privacidad › «Opciones de privacidad» puedes volver a abrir ese formulario y cambiar tu decisión cuando quieras.</li>
+  <li><strong>Identificador de publicidad:</strong> la app declara el permiso de Android <code>AD_ID</code> para que AdMob pueda usarlo. Puedes restablecerlo o eliminarlo en Ajustes de Android › Google › Anuncios.</li>
+  <li><strong>Quitar los anuncios:</strong> el plan Pro, cuando esté disponible, no muestra anuncios y la app no inicia entonces el SDK de AdMob.</li>
+</ul>
+<p>WatchPath no incluye analítica ni herramientas de seguimiento propias, ni informes de fallos enviados a terceros.</p>
+
+<h3>Compras</h3>
+<p>En esta versión no hay compras dentro de la app. Cuando se active el plan Pro, la compra se procesará a través de Google Play y esta política se actualizará antes.</p>
+
+<h2>Servicio de IA</h2>
+<p>WatchPath ofrece funciones de IA <strong>opcionales</strong> («por qué te gustará», ideas fuera de tu lista y resumen de una serie hasta donde vas). Solo se usan cuando tú las pides; el resto de la app funciona igual sin ellas y sin conexión. La app no contiene claves ni conecta directamente con ningún proveedor de IA: envía la petición a una pasarela de IA operada por el desarrollador (Centro OS), que la reenvía a un proveedor de modelos de lenguaje.</p>
+<p>Para limitar el abuso y contar la cuota de uso gratuito, la app usa un identificador de instalación aleatorio (no está ligado a ti ni a tu cuenta de Google) y una comprobación de integridad de Google Play que confirma que la app es la original.</p>
+
+<h2>Región del proveedor</h2>
+<p>El servicio de IA procesa las peticiones mediante un proveedor situado en Singapur. Esto implica una transferencia internacional de los datos de la petición. El proveedor actúa como encargado del tratamiento y no los usa para entrenar modelos.</p>
+
+<h2>Qué se envía</h2>
+<p>Al usar la IA se envía únicamente este texto:</p>
+<ul>
+  <li>Los títulos (hasta 50) y el año de las obras sobre las que pides ayuda.</li>
+  <li>El identificador de catálogo (id_tmdb) cuando se conoce.</li>
+  <li>Tu puntuación, en una escala de 1 a 5, de esas obras.</li>
+  <li>En el resumen de una serie, la temporada y el episodio hasta donde vas, para no desvelarte nada posterior.</li>
+  <li>El idioma de la respuesta (español o inglés).</li>
 </ul>
 
-<h2>Inteligencia artificial</h2>
-<p>Esta versión de WatchPath no envía ningún dato a servicios de inteligencia artificial. Si en una versión futura se añade una función de IA opcional, esta política se actualizará antes y la app te lo explicará antes de enviar nada.</p>
+<h2>Qué no se guarda</h2>
+<p>Las peticiones a la IA y sus respuestas se procesan en memoria y se descartan: <strong>no se guardan</strong> ni se usan para entrenar, y los registros del servicio no las incluyen. La respuesta solo se muestra en tu pantalla. Tampoco se envían tus notas, tus plataformas, tus enlaces, tus fechas de visionado ni nada que te identifique por tu nombre, tu correo o una cuenta: WatchPath no tiene cuenta.</p>
 
+<h2>Cómo borrar tus datos</h2>
+<p>En cualquier momento puedes borrar tus datos. Abre Ajustes, entra en Datos y usa «Borrar todo» para eliminar tu biblioteca, tus notas y tus ajustes del dispositivo. Como el servicio de IA no guarda tus peticiones, no hay nada más que borrar en el servidor.</p>
 <h2>Permisos de Android</h2>
-<p>La app solo necesita el permiso de <strong>acceso a Internet</strong> (para buscar en TVmaze). No pide acceso a la cámara, al micrófono, a la ubicación, a los contactos ni a tus archivos.</p>
+<ul>
+  <li><strong>Acceso a Internet</strong> (buscar en TVmaze, cargar anuncios y usar la IA).</li>
+  <li><strong>ID de publicidad (AD_ID)</strong>, para AdMob, como se explica arriba.</li>
+</ul>
+<p>No pide acceso a la cámara, al micrófono, a la ubicación, a los contactos ni a tus archivos.</p>
 
 <h2>Tus datos, bajo tu control</h2>
 <ul>
-  <li><strong>Exportar:</strong> en Ajustes › Datos puedes exportar tu biblioteca a un archivo JSON y volver a importarlo cuando quieras.</li>
+  <li><strong>Exportar:</strong> en Ajustes › Datos puedes exportar tu biblioteca a un archivo JSON y volver a importarla cuando quieras.</li>
   <li><strong>Borrar:</strong> en Ajustes › Datos, la opción «Borrar todo» elimina de tu dispositivo tu biblioteca, tus notas y tus ajustes.</li>
-  <li>Como el desarrollador no recibe tus datos, no puede acceder a ellos ni modificarlos. Aun así, tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD); puedes ejercerlos directamente en la app o escribiendo al correo de contacto. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</li>
+  <li>Como el desarrollador no recibe tus datos de biblioteca, no puede acceder a ellos ni modificarlos. Aun así, tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD); puedes ejercerlos directamente en la app o escribiendo al correo de contacto. Para los datos que trata Google en publicidad, puedes ejercerlos ante Google. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</li>
 </ul>
 
 <h2>Menores</h2>
-<p>WatchPath no está dirigida a menores de 13 años y no recoge datos personales de nadie, tampoco de menores.</p>
+<p>WatchPath no está dirigida a menores de 13 años. No recoge datos personales de nadie a propósito y, si detectas que un menor ha usado la app, puedes pedir al desarrollador cualquier aclaración por el correo de contacto.</p>
 
 <h2>Fuentes de datos</h2>
 <p>Los datos de series y episodios proceden de TVmaze (licencia CC BY-SA 4.0). WatchPath no está afiliada ni respaldada por TVmaze ni por ninguna plataforma de contenidos.</p>
 
 <h2>Cambios en esta política</h2>
-<p>Si la app cambia lo que hace con tus datos (por ejemplo, al añadir anuncios o funciones de IA), actualizaremos esta página y la fecha de arriba antes de publicar la nueva versión.</p>
+<p>Si la app cambia lo que hace con tus datos, actualizaremos esta página y la fecha de arriba antes de publicar la nueva versión.</p>
 
 <h2>Contacto</h2>
 <p>Escribe al correo de contacto que aparece en la ficha de WatchPath en Google Play.</p>
