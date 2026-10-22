@@ -17,14 +17,14 @@ li, p { margin:.5rem 0; }
 </style>
 </head>
 <body><h1>Política de privacidad de CompraFácil</h1>
-<p class="meta">Última actualización: 20 de octubre de 2026 · Versión de la app: 1.0</p>
-<p>CompraFácil es una app para Android con tu lista de la compra, tu despensa y tu plan de comidas. Esta política explica qué datos trata la app, cuáles salen de tu móvil y por qué.</p>
+<p class="meta">Última actualización: 22 de octubre de 2026 · Versión de la app: 1.2</p>
+<p>CompraFácil es una app para Android con tu lista de la compra, tu despensa y tu plan de comidas. Esta política explica qué datos trata la app, cuáles salen de tu móvil y por qué. Compartir precios y opiniones con otros usuarios es <strong>opcional</strong> y está desactivado por defecto.</p>
 
 <h2>Responsable</h2>
 <p>El responsable del tratamiento es Steven Vicente Fletes Alfaro, desarrollador independiente en España, titular de CompraFácil. Puedes contactar con él en <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</p>
 
 <h2>Qué se guarda y dónde</h2>
-<p>Tus listas, despensa, comidas, presupuesto y precios se guardan <strong>únicamente en tu dispositivo</strong>, en la base de datos local de la app. No hay cuenta, ni sincronización en la nube, ni copia de seguridad en un servidor del desarrollador. Si desinstalas la app o borras sus datos desde Android, se eliminan. Puedes exportarlos o borrarlos con un botón desde Ajustes.</p>
+<p>Tus listas, despensa, comidas, presupuesto y precios se guardan <strong>en tu dispositivo</strong>, en la base de datos local de la app, y siguen allí salvo lo que tú decidas compartir (ver «Precios de la comunidad» y «Opiniones» más abajo). No hay cuenta, ni sincronización en la nube, ni copia de seguridad en un servidor del desarrollador. Si desinstalas la app o borras sus datos desde Android, se eliminan los datos del móvil. Puedes exportarlos o borrarlos con un botón desde Ajustes.</p>
 
 <h2>Permisos de Android</h2>
 <ul>
@@ -34,6 +34,7 @@ li, p { margin:.5rem 0; }
 <li><strong>Cámara</strong>: solo cuando pulsas «escanear código de barras» o «hacer foto» para crear una lista. La app no accede a la cámara por su cuenta ni guarda lo que ve.</li>
 </ul>
 <p>La app no pide acceso a tu ubicación precisa, al micrófono, a los contactos ni a todos tus archivos: las fotos se hacen con la cámara o se eligen con el selector del sistema.</p>
+<p><strong>Ubicación:</strong> la app no usa GPS ni ubicación precisa. Para comparar precios por zona, el código postal lo escribes tú, se usa para consultar y solo se envía truncado a sus 3 primeros dígitos (por ejemplo, 280).</p>
 
 <h2>Conexiones a Internet</h2>
 <p>La app funciona sin conexión para tus listas, tu despensa y tu presupuesto. Se conecta a Internet solo para:</p>
@@ -41,6 +42,8 @@ li, p { margin:.5rem 0; }
 <li><strong>Open Food Facts</strong> (<a href="https://world.openfoodfacts.org">world.openfoodfacts.org</a>): buscar el nombre de un producto (solo si usas el escáner). Recibe el código de barras que escaneas y la dirección IP de tu dispositivo. El desarrollador no recibe ni almacena esa información; el servicio la trata según su propia política de privacidad.</li>
 <li><strong>Anuncios y compras</strong> (Google AdMob y Google Play), como se explica a continuación.</li>
 <li><strong>IA opcional</strong>, como se explica más abajo.</li>
+<li><strong>Precios y opiniones de la comunidad</strong> (servidor de Centro OS del desarrollador): para ver los precios de tu zona y las opiniones de otros usuarios hace falta el código postal que escribes. Enviar tus propios precios y opiniones solo ocurre si das tu consentimiento.</li>
+<li><strong>Open Prices</strong> (Open Food Facts, <a href="https://prices.openfoodfacts.org">prices.openfoodfacts.org</a>): precios abiertos por código de barras, solo lectura.</li>
 </ul>
 
 <h2>Anuncios (Google AdMob)</h2>
@@ -53,23 +56,44 @@ li, p { margin:.5rem 0; }
 <h2>Inteligencia artificial (opcional)</h2>
 <p>Crear una lista a partir de una foto (ticket, nevera o receta) usa IA y solo funciona si tú lo pides; la app te lo indica antes de enviar nada.</p>
 <ul>
-<li>Lo único que se envía es la foto que tú eliges (o el texto que escribes), junto con un identificador aleatorio de la instalación. Nunca se envían tus listas, despensa, presupuesto ni precios.</li>
+<li>Lo único que se envía es la foto que tú eliges (o el texto que escribes), junto con un identificador aleatorio de la instalación. Para esta función no se envían tus listas, despensa ni presupuesto; tus precios solo salen del móvil si activas la opción de compartir precios, que se explica más abajo y es independiente de la IA.</li>
 <li>El contenido va al servicio de IA del desarrollador (Centro OS), que lo procesa con un modelo de IA solo para generar la respuesta. Se procesa en memoria y se descarta al responder: no se guarda en disco ni en registros.</li>
 <li>La IA solo <strong>propone</strong> líneas: nada se añade a tu lista hasta que tú revisas y aceptas cada una.</li>
 <li>El servicio no usa cuenta, nombre ni correo; solo conserva el identificador de la instalación y contadores de uso.</li>
 </ul>
 
+<h2>Precios de la comunidad (opcional)</h2>
+<p>Si lo activas en Ajustes, al terminar una compra la app comparte de forma <strong>anónima</strong> los precios de tu ticket para que otros usuarios puedan compararlos por zona. Para ello pide tu <strong>consentimiento</strong> explícito, con un texto claro, sin casillas premarcadas, y puedes retirarlo cuando quieras en Ajustes.</p>
+<ul>
+<li><strong>Qué se envía:</strong> la cadena de supermercado, la fecha, tu código postal truncado a los 3 primeros dígitos, y por cada producto el código de barras (o su nombre normalizado, marca y formato) y el precio.</li>
+<li><strong>Qué no se envía:</strong> nunca el nombre de tus listas, tus notas, tus fotos, tu ubicación exacta ni tu dirección IP guardada junto al dato.</li>
+<li><strong>Base legal:</strong> tu consentimiento (artículo 6.1.a del RGPD).</li>
+<li><strong>Identificador:</strong> la instalación se identifica con un identificador seudónimo que se desvincula del precio a los 30 días. Los precios, ya sin ninguna persona asociada, se conservan hasta 24 meses.</li>
+<li><strong>Borrado:</strong> con el botón «Borrar mis aportes y opiniones» (Más &gt; Privacidad) se borran del servidor tus aportes y tus opiniones y se retira tu consentimiento; también puedes pedirlo por correo a <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</li>
+</ul>
+<p>Los precios los aportan los usuarios y pueden ser incorrectos. Si el emparejado de productos usa un modelo de IA, ese modelo solo recibe el nombre, la marca y el formato del producto.</p>
+
+<h2>Opiniones (opcional)</h2>
+<p>Si das tu consentimiento, puedes publicar una opinión por producto: de 1 a 5 estrellas y un texto de hasta 280 caracteres. Se muestra a otros usuarios <strong>sin tu nombre ni cuenta</strong>. La app te pide no incluir datos personales y filtra los evidentes. Cualquier usuario puede reportar una opinión desde la app y las reportadas se revisan.</p>
+<ul>
+<li>Se conservan mientras uses la app y hasta 12 meses sin uso de la instalación.</li>
+<li>Puedes borrar tu opinión en cualquier momento, con el botón «Borrar mis aportes y opiniones» o escribiendo al correo de contacto.</li>
+</ul>
+
+<h2>Transferencias y terceros</h2>
+<p>Los datos que compartes se guardan en el servidor de Centro OS del desarrollador, en España/UE. No se ceden a terceros. Los datos de Open Prices, Google AdMob y Google Play se rigen por sus propias políticas, como se indica arriba.</p>
+
 <h2>Analítica y fallos</h2>
 <p>CompraFácil no incluye analítica ni herramientas de seguimiento propias, ni envía informes de fallos a terceros.</p>
 
 <h2>Tus datos, bajo tu control</h2>
-<p>Como tus listas y tu despensa no salen de tu móvil, el desarrollador no puede acceder a ellas ni modificarlas. Tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD); puedes ejercerlos escribiendo al correo de contacto (<a href="mailto:steve@steveflets.es">steve@steveflets.es</a>). También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+<p>Como tus listas y tu despensa no salen de tu móvil, el desarrollador no puede acceder a ellas ni modificarlas; solo recibe los precios y las opiniones que tú decides compartir. Tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD); puedes ejercerlos escribiendo al correo de contacto (<a href="mailto:steve@steveflets.es">steve@steveflets.es</a>). También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
 
 <h2>Menores</h2>
 <p>CompraFácil está dirigida a mayores de 18 años y no recoge conscientemente datos de menores.</p>
 
 <h2>Fuentes de datos</h2>
-<p>Los nombres de producto proceden de Open Food Facts (ODbL, openfoodfacts.org). CompraFácil es una app independiente: no está afiliada a ningún supermercado.</p>
+<p>Los nombres de producto proceden de Open Food Facts (ODbL, openfoodfacts.org). Algunos precios proceden de <strong>Open Prices</strong> (Open Food Facts, licencia ODbL, prices.openfoodfacts.org) y la app muestra su atribución. Los precios de la comunidad los aportan usuarios y pueden ser incorrectos. CompraFácil es una app independiente: no está afiliada a ningún supermercado.</p>
 
 <h2>Cambios en esta política</h2>
 <p>Si la app cambia lo que hace con tus datos, actualizaremos esta página y la fecha de arriba antes de publicar la nueva versión.</p>
