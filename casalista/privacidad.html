@@ -17,20 +17,20 @@ li, p { margin:.5rem 0; }
 </style>
 </head>
 <body><h1>Política de privacidad de CasaLista</h1>
-<p class="meta">Última actualización: 20 de octubre de 2026 · Versión de la app: 1.0</p>
+<p class="meta">Última actualización: 23 de octubre de 2026 · Versión de la app: 1.0</p>
 <p>CasaLista es una app para Android que guarda la ficha de vida de los aparatos de tu casa: facturas, garantías, mantenimientos y reparaciones. Esta política explica qué datos trata la app, cuáles salen de tu móvil y por qué.</p>
 
 <h2>Responsable</h2>
 <p>El responsable del tratamiento es Steven Vicente Fletes Alfaro, desarrollador independiente en España, titular de CasaLista. Puedes contactar con él en <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</p>
 
 <h2>Qué se guarda y dónde</h2>
-<p>Tus viviendas, aparatos, garantías, tareas, reparaciones y documentos (facturas, manuales, fotos) se guardan <strong>únicamente en tu dispositivo</strong>, en la base de datos local de la app. No hay cuenta, ni sincronización en la nube, ni copia de seguridad en un servidor del desarrollador. Si desinstalas la app o borras sus datos desde Android, se eliminan.</p>
+<p>Tus viviendas, aparatos, garantías, tareas, reparaciones y documentos (facturas, manuales, fotos) se guardan <strong>en tu dispositivo</strong>, en la base de datos local de la app, y siguen allí salvo lo que decidas compartir con la función opcional «Vivienda compartida» (ver más abajo). No hay cuenta ni copia de seguridad en un servidor del desarrollador. Los documentos (facturas, manuales, fotos) <strong>nunca</strong> salen de tu móvil por esa función. Si desinstalas la app o borras sus datos desde Android, se eliminan.</p>
 <p>La copia de seguridad que puedes crear desde Ajustes se cifra con la contraseña que elijas y la guardas tú donde quieras. CasaLista no la sube a ningún servicio propio. Si no la cifras o la compartes con otra app, su contenido pasa a estar bajo el control de ese destino.</p>
 
 <h2>Permisos de Android</h2>
 <ul>
 <li><strong>Notificaciones y arranque del dispositivo</strong> (<code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code>): para avisarte de las tareas y reprogramar los avisos al reiniciar el móvil. Los avisos se generan en tu dispositivo.</li>
-<li><strong>Internet y estado de la red</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): para los anuncios, las compras y la lectura opcional de facturas con IA.</li>
+<li><strong>Internet y estado de la red</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): para los anuncios, las compras, la lectura opcional de facturas con IA y la vivienda compartida opcional.</li>
 <li><strong>Identificador de publicidad</strong> (<code>AD_ID</code>): lo usa el SDK de anuncios de Google (ver más abajo).</li>
 <li><strong>Cámara</strong>: solo si pulsas «hacer foto» para añadir un documento o leer una factura. La app no accede a la cámara por su cuenta.</li>
 </ul>
@@ -54,12 +54,24 @@ li, p { margin:.5rem 0; }
 <li>Puedes borrar los datos de tu instalación en el servicio desde Ajustes › Lectura de facturas › «Borrar mis datos del servidor» (también al usar «Borrar todo»).</li>
 </ul>
 
+<h2>Vivienda compartida (opcional)</h2>
+<p>Si quieres llevar las tareas y los aparatos de tu casa con otra persona, puedes compartir una vivienda e invitarla con un enlace o con un código de 8 caracteres. No hay cuenta ni correo. Es opcional: no se envía nada hasta que compartes una vivienda o aceptas una invitación.</p>
+<ul>
+<li><strong>Qué se comparte:</strong> las tareas, los aparatos, las garantías y las reparaciones de esa vivienda (texto y fechas). Los <strong>documentos y fotos</strong> (facturas, manuales) se quedan en tu móvil.</li>
+<li><strong>Cifrado de extremo a extremo:</strong> cada cambio se cifra en tu móvil antes de salir, con una clave que solo tienen los móviles de la vivienda. La clave viaja en el enlace de invitación, en la parte posterior a «#», que tu móvil nunca envía a los servidores. El servidor del desarrollador solo guarda esos bloques cifrados y <strong>no puede leerlos</strong>. Si invitas con un código en vez de con el enlace, la clave se protege con ese código, de un solo uso y válido 7 días.</li>
+<li><strong>Qué guarda el servidor:</strong> los bloques cifrados, un identificador seudónimo de cada instalación de la vivienda (distinto en cada app), las fechas de alta y de última actividad y el tamaño. No guarda tu nombre, tu correo, tu dirección IP ni el contenido en claro.</li>
+<li><strong>Base legal:</strong> la prestación del servicio que tú pides al compartir o unirte (artículo 6.1.b del RGPD).</li>
+<li><strong>Quién ve qué:</strong> quien entra en la vivienda ve y puede modificar lo compartido. Invita solo a personas de confianza.</li>
+<li><strong>Límites:</strong> 2 dispositivos por vivienda en la versión gratuita; más con Pro.</li>
+<li><strong>Salir y borrado:</strong> con «Salir de la vivienda compartida» tu móvil deja de sincronizar y conservas tu copia local; cuando sale el último miembro, todo lo compartido se borra del servidor. Una vivienda que nadie usa durante 30 días se borra entera. Las invitaciones caducan a los 7 días. También puedes pedir el borrado por correo a <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</li>
+</ul>
+
 <h2>Analítica y fallos</h2>
 <p>CasaLista no incluye analítica ni herramientas de seguimiento propias, ni envía informes de fallos a terceros. Los registros internos de la app solo contienen códigos de error e identificadores, nunca nombres, notas ni documentos.</p>
 
 <h2>Tus datos, bajo tu control</h2>
 <ul>
-<li>Como tus fichas y documentos no salen de tu móvil, el desarrollador no puede acceder a ellos ni modificarlos. Tienes siempre a mano exportarlos (JSON, calendario .ics, informe de ficha) y borrarlos (por vivienda o con «Borrar todo»).</li>
+<li>Tus fichas solo salen de tu móvil si compartes una vivienda, y entonces van cifradas de extremo a extremo; tus documentos nunca salen. El desarrollador no puede leer ni modificar ni unas ni otros. Tienes siempre a mano exportarlos (JSON, calendario .ics, informe de ficha) y borrarlos (por vivienda o con «Borrar todo»).</li>
 <li>Tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD); puedes ejercerlos escribiendo al correo de contacto (<a href="mailto:steve@steveflets.es">steve@steveflets.es</a>). También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</li>
 </ul>
 
