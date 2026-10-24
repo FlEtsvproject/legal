@@ -18,7 +18,7 @@ li, p { margin:.5rem 0; }
 </head>
 <body>
 <h1>Política de privacidad de WatchPath</h1>
-<p class="meta">Última actualización: 20 de octubre de 2026 · Versión de la app: 1.1</p>
+<p class="meta">Última actualización: 25 de octubre de 2026 · Versión de la app: 1.1</p>
 
 <p>WatchPath es una app para Android que te ayuda a seguir películas, series y anime. No tiene cuentas ni registro: tu biblioteca, tus notas y tus ajustes se guardan solo en tu dispositivo. Esta política explica qué datos trata la app, quién los recibe y cómo puedes controlarlos.</p>
 
@@ -55,11 +55,11 @@ li, p { margin:.5rem 0; }
 <p>En esta versión no hay compras dentro de la app. Cuando se active el plan Pro, la compra se procesará a través de Google Play y esta política se actualizará antes.</p>
 
 <h2>Servicio de IA</h2>
-<p>WatchPath ofrece dos funciones de IA <strong>opcionales</strong>: «¿Por qué te gustará?» (una frase por cada propuesta de Noche de cine) y «Ponte al día» (un resumen de una serie hasta donde vas, sin destripar lo posterior). Solo se usan cuando tú las pides, y la primera vez la app te enseña lo que se envía y te pide confirmación; el resto de la app funciona igual sin ellas y sin conexión. La app no contiene claves ni conecta con ningún proveedor de IA de terceros: envía la petición a una pasarela de IA operada por el desarrollador (Centro OS), que la procesa con un modelo de lenguaje que ejecuta el propio desarrollador en sus equipos.</p>
+<p>WatchPath ofrece dos funciones de IA <strong>opcionales</strong>: «¿Por qué te gustará?» (una frase por cada propuesta de Noche de cine) y «Ponte al día» (un resumen de una serie hasta donde vas, sin destripar lo posterior). Solo se usan cuando tú las pides, y la primera vez la app te enseña lo que se envía y te pide confirmación; el resto de la app funciona igual sin ellas y sin conexión. La app no contiene claves ni conecta directamente con ningún proveedor de IA: envía la petición a una pasarela de IA operada por el desarrollador (Centro OS), que la reenvía a <strong>Anthropic PBC</strong> (Estados Unidos, API de Claude) para generar el texto. Anthropic actúa como <strong>encargado del tratamiento</strong>: solo la trata para devolverte el resultado, según su contrato de tratamiento de datos para la API comercial, y por defecto no la usa para entrenar sus modelos. Si ese servicio no está disponible, la procesa un modelo de lenguaje que ejecuta el propio desarrollador en sus equipos.</p>
 <p>Para limitar el abuso y contar el cupo gratuito (unos pocos usos al día), la app genera en tu dispositivo una clave técnica que identifica la instalación (no está ligada a ti, a tu cuenta de Google ni a tu dispositivo físico) y firma con ella cada petición. El servicio cuenta los usos por esa clave y limita las peticiones por dirección IP sin guardarla. La conexión pasa por Cloudflare, que, como cualquier intermediario de red, ve tu dirección IP.</p>
 
 <h2>Dónde se procesa</h2>
-<p>En los equipos del propio desarrollador. No hay proveedor de IA de terceros ni se usan tus peticiones para entrenar modelos.</p>
+<p>Las peticiones a la IA se envían a Anthropic PBC (Estados Unidos) a través de su API, lo que supone una transferencia internacional de datos fuera del Espacio Económico Europeo, amparada en las cláusulas contractuales tipo de la Comisión Europea; los datos viajan cifrados. Como respaldo, un modelo del propio desarrollador, en sus equipos, sin tercero. Tus peticiones no se usan para entrenar modelos.</p>
 
 <h2>Qué se envía</h2>
 <p>Al usar la IA se envía únicamente este texto:</p>
@@ -93,7 +93,7 @@ li, p { margin:.5rem 0; }
 <p>WatchPath no está dirigida a menores de 13 años. No recoge datos personales de nadie a propósito y, si detectas que un menor ha usado la app, puedes pedir al desarrollador cualquier aclaración por el correo de contacto (<a href="mailto:steve@steveflets.es">steve@steveflets.es</a>).</p>
 
 <h2>Fuentes de datos</h2>
-<p>Los datos de series y episodios proceden de TVmaze (licencia CC BY-SA 4.0). WatchPath no está afiliada ni respaldada por TVmaze ni por ninguna plataforma de contenidos.</p>
+<p>Los datos de series y episodios proceden de TVmaze (licencia CC BY-SA 4.0), y parte del catálogo inicial, de Wikidata (licencia CC0). WatchPath no está afiliada ni respaldada por TVmaze ni por ninguna plataforma de contenidos.</p>
 
 <h2>Cambios en esta política</h2>
 <p>Si la app cambia lo que hace con tus datos, actualizaremos esta página y la fecha de arriba antes de publicar la nueva versión.</p>
