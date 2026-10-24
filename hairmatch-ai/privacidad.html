@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de privacidad - HairMatch AI</title>
+<title>Privacidad / Privacy - HairMatch AI</title>
 <style>
-:root { color-scheme: light dark; --bg:#fafaf9; --fg:#1c1917; --ac:#9a5b00; }
+:root { color-scheme: light dark; --bg:#fafaf9; --fg:#1c1917; --ac:#8a4f00; }
 @media (prefers-color-scheme: dark) { :root { --bg:#101418; --fg:#e8eaed; --ac:#f2b34b; } }
 body { margin:0 auto; max-width:42rem; padding:2rem 1rem; background:var(--bg); color:var(--fg);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height:1.6; }
@@ -13,28 +13,42 @@ h1 { font-size:1.75rem; line-height:1.2; }
 h2 { margin-top:2rem; font-size:1.25rem; }
 a { color:var(--ac); }
 li, p { margin:.5rem 0; }
-.meta { opacity:.75; font-size:.9rem; }
+.meta { opacity:.85; font-size:.9rem; }
+nav ul { list-style:none; padding:0; display:flex; gap:1rem; }
+section + section { margin-top:3rem; padding-top:1rem; border-top:1px solid currentColor; }
 </style>
 </head>
-<body><h1>Política de privacidad de HairMatch AI</h1>
-<p class="meta">Última actualización: 20 de octubre de 2026 · Versión de la app: 1.0</p>
+<body>
+<nav aria-label="Idioma / Language">
+<ul>
+<li><a href="#es" hreflang="es">Español</a></li>
+<li><a href="#en" hreflang="en">English</a></li>
+</ul>
+</nav>
+<main>
+<section id="es" lang="es" aria-labelledby="titulo-es">
+<h1 id="titulo-es">Política de privacidad de HairMatch AI</h1>
+<p class="meta">Última actualización: 24 de octubre de 2026 · Versión de la app: 1.3.1</p>
 <p>HairMatch AI es una app para Android que te ayuda a elegir un corte de pelo, a explicárselo a tu peluquero y a probar un peinado sobre tu foto con una simulación generada con inteligencia artificial (IA). Esta política explica qué datos trata la app, para qué y durante cuánto tiempo.</p>
 <h2>Responsable</h2>
 <p>El responsable del tratamiento es Steven Vicente Fletes Alfaro, desarrollador independiente en España, titular de HairMatch AI. Puedes contactar con él en <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</p>
 <h2>Qué se guarda en tu dispositivo</h2>
-<p>Tu perfil de pelo («Mi pelo»), tus favoritos, tus fichas para el peluquero, las fotos de referencia que añadas a ellas y los ajustes se guardan <strong>únicamente en tu dispositivo</strong>, en la base de datos local de la app. No hay cuenta ni copia de seguridad en la nube. A las fotos que importas se les quitan los metadatos (EXIF, incluida la ubicación) antes de guardarlas. Si desinstalas la app o pulsas «Borrar todo» en Ajustes, se eliminan.</p>
-<h2>Función «Probar en mi foto» (IA)</h2>
-<p>Esta función es opcional y solo existe en Android. Solo cuando pulsas «Probar en mi foto» y aceptas el consentimiento que la app te muestra, ocurre lo siguiente:</p>
+<p>Tu perfil de pelo («Mi pelo»), tus favoritos, tus fichas para el peluquero, las fotos de referencia que añadas a ellas y los ajustes se guardan <strong>únicamente en tu dispositivo</strong>, en la base de datos local de la app. No hay cuenta ni copia de seguridad en la nube: Android no copia estos datos a la nube de Google. A las fotos que importas se les quitan los metadatos (EXIF, incluida la ubicación) antes de guardarlas. Si desinstalas la app o pulsas «Borrar todo» en Ajustes, se eliminan.</p>
+<p>«Mi foto» (tu selfie, que usan Probar, Probar color y Comparar) vive solo en la memoria de la app mientras está abierta. Solo si activas «Recordar mi foto en este móvil» se guarda también en tu dispositivo, <strong>cifrada</strong>; «Olvidar mi foto» la borra de todos los sitios. La foto se revisa y se reencuadra en el móvil (sin enviarla a ningún sitio) y se le quitan los metadatos (EXIF, incluida la ubicación).</p>
+<h2>IA: qué se envía y a quién</h2>
+<p>Las funciones de prueba con IA («Probar en mi foto»: peinado y color y, según se vayan incorporando, ropa, gafas, maquillaje y vídeo corto) son opcionales y solo existen en Android. Solo cuando las usas y aceptas el consentimiento (<code>fotos-v2</code>) que la app te muestra, ocurre lo siguiente:</p>
 <ul>
-<li>Se envía tu foto (sin metadatos), el estilo y el color elegidos de una lista cerrada, el consentimiento y un identificador de la petición al servicio de IA del desarrollador (Centro OS). No se envía texto libre.</li>
-<li>El servicio procesa la foto <strong>de forma efímera</strong>: la mantiene en memoria solo mientras dura la petición, no la escribe en disco ni en registros y no la conserva.</li>
-<li>Para generar la imagen, el servicio la reenvía a un proveedor de IA (Alibaba Cloud Model Studio, región de Singapur), que actúa como encargado del tratamiento. Esto supone una transferencia internacional de datos fuera del Espacio Económico Europeo. Los datos viajan cifrados.</li>
+<li>Antes de aceptar, la app te pide confirmar que <strong>la foto es tuya y que eres mayor de 18 años</strong>. Quien aceptó la versión anterior del consentimiento (<code>fotos-v1</code>, solo peinados) debe aceptar la nueva antes de usar ropa, gafas, maquillaje o vídeo.</li>
+<li>Se envía tu foto (sin metadatos), el estilo, color, prenda, montura o maquillaje elegidos de una lista cerrada, el consentimiento y un identificador de la petición al servicio de IA del desarrollador (Centro OS). No se envía texto libre.</li>
+<li>El servicio procesa la foto en un <strong>ordenador propio del desarrollador, en España</strong>. No se envía a ningún proveedor de IA externo, a terceros ni a la nube. La foto que envías se borra al terminar el trabajo (si nadie lo recoge, a los 15 minutos como máximo); los resultados de imagen se borran al entregártelos o, como máximo, a los <strong>15 minutos</strong>, y los vídeos a las <strong>24 horas</strong> como máximo (para poder descargarlos de nuevo). Un reintento no te cobra la misma prueba dos veces.</li>
 <li>La imagen resultante se te muestra con la etiqueta «Generado con IA» y, si la compartes o exportas, lleva una marca visible y un metadato que indica que es contenido generado con IA. El resultado no se guarda salvo que tú lo pidas.</li>
 <li>Es una simulación orientativa: el resultado real en tu pelo puede ser distinto. Puedes reportar cualquier resultado desde la app; el informe incluye el estilo, el código del resultado y el motivo, nunca la imagen.</li>
 <li>La función es solo para mayores de 18 años y para fotos propias. Puedes revocar el consentimiento en Ajustes cuando quieras.</li>
 </ul>
-<h2>Datos que conserva el servicio de IA</h2>
-<p>Para controlar las pruebas gratuitas, las cuotas y el fraude, el servicio guarda un identificador de instalación, una clave pública del dispositivo, un contador diario de pruebas y, si contratas Pro, un resumen irreversible (hash) de tu compra. No guarda tus fotos. Los contadores sin uso se borran a los 90 días. Desde Ajustes puedes pedir «Borrar mis datos de IA» o «Borrar todo»: se elimina todo lo asociado a tu instalación (si no hay conexión, se reintenta al volver).</p>
+<h2>Datos que conserva el servicio de IA: ID de instalación</h2>
+<p>Para controlar las pruebas gratuitas, las cuotas y el fraude, el servicio guarda un identificador de instalación (aleatorio, no está ligado a tu nombre ni a tu cuenta de Google), una clave pública del dispositivo, un contador diario de pruebas y, si contratas Pro, un resumen irreversible (hash) de tu compra. No guarda tus fotos. Los contadores sin uso se borran a los 90 días.</p>
+<h2>Borrar mis datos de IA</h2>
+<p>En Ajustes puedes pulsar «Borrar mis datos de IA» (o «Borrar todo»): se elimina todo lo asociado a tu instalación en el servicio de IA y se revoca el consentimiento al momento. Si no hay conexión, el borrado queda pendiente y se reintenta al abrir la app y al volver la conexión hasta que el servicio lo confirma. También puedes pedirlo por correo a <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</p>
 <h2>Anuncios</h2>
 <p>Las versiones gratuitas muestran anuncios de <strong>Google AdMob</strong> en zonas concretas (nunca en la pantalla de «Probar en mi foto», en el resultado, en Mi pelo, en el modo peluquero ni en Ajustes). AdMob puede usar el identificador de publicidad de tu dispositivo, datos de interacción con los anuncios y datos de diagnóstico, y los comparte con Google. Al abrir la app por primera vez se te pide el consentimiento (formulario de Google, UMP): si lo rechazas, los anuncios no son personalizados. Puedes cambiarlo más tarde y restablecer o desactivar el identificador de publicidad en los ajustes de Android. Más información: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>. Con la suscripción Pro no hay anuncios.</p>
 <h2>Compras</h2>
@@ -44,10 +58,51 @@ li, p { margin:.5rem 0; }
 <h2>Permisos de Android</h2>
 <p>La app declara el permiso de acceso a Internet, el identificador de publicidad (AD_ID) para los anuncios y, si eliges hacer una foto con la cámara en lugar de elegir una de la galería, el permiso de cámara en ese momento. No pide acceso a tu ubicación, micrófono, contactos ni a todos tus archivos.</p>
 <h2>Tus derechos</h2>
-<p>Tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD). Puedes ejercerlos escribiendo al correo de contacto (<a href="mailto:steve@steveflets.es">steve@steveflets.es</a>); además, «Exportar mis datos» en Ajustes te entrega un archivo con tu perfil, favoritos, fichas y ajustes. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+<p>Tienes los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad del Reglamento General de Protección de Datos (RGPD). Puedes ejercerlos escribiendo al correo de contacto; además, «Exportar mis datos» en Ajustes te entrega un archivo con tu perfil, favoritos, fichas y ajustes. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
 <h2>Menores</h2>
 <p>HairMatch AI está dirigida a mayores de 18 años y no recoge conscientemente datos de menores.</p>
 <h2>Cambios en esta política</h2>
 <p>Si la app cambia lo que hace con tus datos, actualizaremos esta página y la fecha de arriba antes de publicar la nueva versión.</p>
+</section>
+
+<section id="en" lang="en" aria-labelledby="titulo-en">
+<h1 id="titulo-en">HairMatch AI Privacy Policy</h1>
+<p class="meta">Last updated: October 24, 2026 · App version: 1.3.1</p>
+<p>HairMatch AI is an Android app that helps you choose a haircut, explain it to your hairdresser and try a hairstyle on your own photo using a simulation generated with artificial intelligence (AI). This policy explains what data the app handles, why, and for how long.</p>
+<h2>Controller</h2>
+<p>The data controller is Steven Vicente Fletes Alfaro, an independent developer based in Spain and the owner of HairMatch AI. You can contact him at <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</p>
+<h2>What is stored on your device</h2>
+<p>Your hair profile ("My hair"), favorites, hairdresser cards, the reference photos you add to them and your settings are stored <strong>only on your device</strong>, in the app's local database. There is no account and no cloud backup: Android does not copy this data to Google's cloud. Photos you import have their metadata (EXIF, including location) removed before they are saved. If you uninstall the app or tap "Delete everything" in Settings, they are erased.</p>
+<p>"My photo" (your selfie, used by Try on, Try colour and Compare) only lives in the app's memory while it is open. Only if you turn on "Remember my photo on this phone" is it also saved on your device, <strong>encrypted</strong>; "Forget my photo" deletes it everywhere. The photo is checked and re-framed on your phone (it is not sent anywhere) and its metadata (EXIF, including location) is removed.</p>
+<h2>AI: what is sent and to whom</h2>
+<p>The AI try-on features ("Try on my photo": hairstyle and colour and, as they are added, clothes, glasses, makeup and short video) are optional and only exist on Android. Only when you use them and accept the consent (<code>fotos-v2</code>) the app shows you, the following happens:</p>
+<ul>
+<li>Before accepting, the app asks you to confirm that <strong>the photo is yours and that you are over 18</strong>. Anyone who accepted the previous consent (<code>fotos-v1</code>, hairstyles only) must accept the new one before using clothes, glasses, makeup or video.</li>
+<li>Your photo (without metadata), the style, colour, garment, frame or makeup you picked from a closed list, your consent and a request identifier are sent to the developer's AI service (Centro OS). No free text is sent.</li>
+<li>The service processes the photo on a <strong>computer owned by the developer, in Spain</strong>. It is not sent to any external AI provider, to third parties or to the cloud. The photo you send is deleted when the job ends (if nobody collects it, after 15 minutes at most); image results are deleted once delivered to you or, at most, after <strong>15 minutes</strong>, and videos after <strong>24 hours</strong> at most (so you can download them again). A retry does not charge you twice for the same try.</li>
+<li>The resulting image is shown with a "Generated with AI" label and, if you share or export it, it carries a visible mark and metadata stating it is AI-generated content. The result is not saved unless you ask for it.</li>
+<li>It is an indicative simulation: the real result on your hair may differ. You can report any result from the app; the report contains the style, the result code and the reason, never the image.</li>
+<li>The feature is for people aged 18 or over and for your own photos only. You can withdraw consent in Settings at any time.</li>
+</ul>
+<h2>Data kept by the AI service: installation ID</h2>
+<p>To control free trials, quotas and fraud, the service stores an installation ID (random, not linked to your name or Google account), a device public key, a daily trial counter and, if you buy Pro, an irreversible hash of your purchase. It does not store your photos. Unused counters are deleted after 90 days.</p>
+<h2>Delete my AI data</h2>
+<p>In Settings you can tap "Delete my AI data" (or "Delete everything"): everything tied to your installation in the AI service is erased and your consent is withdrawn immediately. If you are offline, the deletion stays pending and is retried when the app opens and when you are back online, until the service confirms it. You can also request it by email at <a href="mailto:steve@steveflets.es">steve@steveflets.es</a>.</p>
+<h2>Ads</h2>
+<p>Free versions show <strong>Google AdMob</strong> ads in specific places (never on the "Try on my photo" screen, the result, My hair, hairdresser mode or Settings). AdMob may use your device's advertising ID, ad interaction data and diagnostic data, and shares them with Google. When you first open the app you are asked for consent (Google's UMP form): if you decline, ads are not personalized. You can change this later and reset or disable the advertising ID in Android settings. More information: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>. With the Pro subscription there are no ads.</p>
+<h2>Purchases</h2>
+<p>The Pro subscription is handled by Google Play; the developer does not receive your payment details. To recognize your subscription, the AI service receives a purchase identifier and stores only an irreversible hash. You can cancel at any time in Google Play.</p>
+<h2>Usage statistics</h2>
+<p>If you turn them on in Settings (they are off by default), the app sends aggregated daily counters (event name, date and app version) to the developer's own server, with no persistent identifiers. There is no third-party analytics or crash-reporting SDK.</p>
+<h2>Android permissions</h2>
+<p>The app declares the Internet permission, the advertising ID (AD_ID) for ads and, if you choose to take a photo with the camera instead of picking one from the gallery, the camera permission at that moment. It does not ask for your location, microphone, contacts or access to all your files.</p>
+<h2>Your rights</h2>
+<p>You have the rights of access, rectification, erasure, objection, restriction and portability under the General Data Protection Regulation (GDPR). You can exercise them by writing to the contact email; in addition, "Export my data" in Settings gives you a file with your profile, favorites, cards and settings. You may also lodge a complaint with the Spanish Data Protection Agency (aepd.es).</p>
+<h2>Minors</h2>
+<p>HairMatch AI is aimed at people aged 18 or over and does not knowingly collect data from minors.</p>
+<h2>Changes to this policy</h2>
+<p>If the app changes what it does with your data, we will update this page and the date above before releasing the new version.</p>
+</section>
+</main>
 </body>
 </html>
